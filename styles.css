@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #333;
+    font-size: 20px;
 }
 
 header{
@@ -32,7 +33,7 @@ header{
 .header-logo h1 {
     text-decoration: none;
     color: #93B1A6;
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 nav ul {
@@ -52,9 +53,44 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #217d30;
-    font-size: 18px;
 }
 
 
 
+/**     PRESENTACION        **/
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: relative;
+    height: 100vh;
+}
+
+.presentacion .contenedor-presentacion {
+    height: 40%;
+    width: 40%;
+    padding: 20px 30px;
+    margin-top: -5rem;
+    overflow-y: auto;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+
+.presentacion .contenedor-presentacion pre {
+    white-space: pre-wrap; 
+    word-break: break-all; 
+    overflow-x: auto;
+    color: #93B1A6;
+    background-color: #0C0C0C;
+    padding: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.presentacion .contenedor-imagen-perfil img{
+    background-size: cover;
+    border-radius: 50% 80% 60%;
+    margin: 0 auto;
+}
 
