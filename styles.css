@@ -25,8 +25,34 @@ header{
 }
 
 .header-logo img{
-    width: 80px;
+    width: 60px;
     margin-right: 10px;
+}
+
+.header-logo h1 {
+    text-decoration: none;
+    color: #93B1A6;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #93B1A6;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #217d30;
+    font-size: 18px;
 }
 
 
