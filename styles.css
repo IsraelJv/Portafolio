@@ -31,6 +31,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    position:fixed;
+    width: 100%;
 }
 
 .header-logo {
@@ -71,7 +73,6 @@ header {
 
 .nav-lista li a {
     color: var(--color-text-light);
-    text-decoration: none;
     transition: color 0.3s ease, font-size 0.3s ease;
 }
 
@@ -79,21 +80,31 @@ header {
     color: var(--color-text-hover);
 }
 
+
+
+main {
+    background: linear-gradient(90deg, rgba(4,13,18,1) 0%, rgba(24,61,61,1) 35%, rgba(92,131,116,1) 100%);
+}
+
+
 /*********************************************/
 /*              PRESENTACION                 */
 /*********************************************/
 
 .presentacion {
     display: flex;
-    height: 90vh; /*Alto completo de la pantalla*/
+    height: 100vh; /*Alto completo de la pantalla*/
+    align-items: center;
 }
 
 .contenedor-presentacion{
+    background-color: #040D12;
     border: 10px solid black;
     color: var(--color-text-light);
     flex: 1;
-    text-align: center;
+    margin: 1rem;
     padding: 1.5rem;
+    text-align: center;
 }
 
 #saludo {
@@ -120,16 +131,11 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    list-style-type: none;
 }
 
 .lista-iconos li {
     margin-left: 1.5rem;
-}
-
-.lista-iconos li a{
-    text-decoration-line: none;
-    text-decoration-color: none;
-    text-decoration-style: none;
 }
 
 .lista-iconos li a img {
@@ -138,5 +144,130 @@ header {
 
 .contenedor-imagen-perfil {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contenedor-imagen-perfil img {
+    border-radius: 40%;
+    width: 400px;
+}
+
+/*********************************************/
+/*              SOBRE MI                     */
+/*********************************************/
+
+.sobre-mi {
+    background-color: #040D12;
+    border: 10px solid black;
+    color: var(--color-text-light);
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.sobre-mi h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.contenedor-sobre-mi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.estudios {
+    flex: 1;
+}
+
+.sobre-mi-imagen {
+    flex: 1;
+    align-content: center;
+}
+
+.habilidades ul {
+    list-style-type: none;
+}
+
+/*********************************************/
+/*              TECNOLOGÍAS                     */
+/*********************************************/
+
+.conocimientos {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.tecnologias {
+    background-color: #040D12;
+    border: 10px solid black;
+    color: var(--color-text-light);
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.contenedor-tecnologia {
+    background-color: white;
+    flex: 1;
+    margin: 5px;
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px;
+    transition: border 0.3s ease;
+}
+
+.contenedor-tecnologia:hover{
+    border: 10px solid var(--color-section1);
+}
+
+.contenedor-tecnologia img {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+.contenedor-tecnologia p {
+    color: var(--color-text-dark);
+}
+
+
+
+
+.cursos {
+    background-color: #040D12;
+    border: 10px solid black;
+    color: var(--color-text-light);
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+
+/*********************************************/
+/*              PIE DE PAGINA                */
+/*********************************************/
+
+footer {
+    background-color: var(--color-navbar);
+    color: var(--color-footer);
+    text-align: center;
+    width: 100%;
+}

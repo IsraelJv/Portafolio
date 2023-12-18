@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio personal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
     <header>
         <div class="header-logo">
             <img src="./img/logo.jpg" alt="Logotipo" srcset="">
-            <a href="#"><h1>IsraelJv</h1></a>
+            <a href="#">
+                <h1>IsraelJv</h1>
+            </a>
         </div>
         <nav class="header-navegacion">
             <ul class="nav-lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#conocimientos">Tecnologías</a></li>
                 <li><a href="#">Proyectos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -27,11 +32,12 @@
     </header>
 
     <main>
-        <section class="presentacion">
+        <section id="presentacion" class="presentacion">
             <div class="contenedor-presentacion">
                 <p id="saludo">¡Hola a todos!</p>
-                <h2 id="nombre">Soy Israel</h2>
-                <p id="descripcion">Soy un BackEnd Development que le encanta desarrollar API's que dan funcionalidad a tus páginas favoritas.</p>
+                <h2 id="nombre">Me llamo Israel</h2>
+                <p id="descripcion">Soy desarrollador BackEnd al que le encanta desarrollar API's que dan funcionalidad
+                    a tus páginas favoritas.</p>
                 <div class="contenedor-iconos">
                     <ul class="lista-iconos">
                         <li><a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a></li>
@@ -40,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="contenedor-imagen-perfil">
                 <img src="./img/perfil.png" alt="foto perfil">
             </div>
@@ -48,43 +54,118 @@
 
         <hr />
 
-        <section>
+        <section id="sobre-mi" class="sobre-mi">
             <h2>Sobre mi</h2>
-            <p>Soy estudiante de sistemas computacionales.</p>
+            <div class="contenedor-sobre-mi">
+                <div class="estudios">
+                    <p>Actualmente, estoy en busca de tema para mi trabajo de titulación para graduarme como
+                        <b>Ingeniero en Sistemas Computacionales</b>.</p>
+                    <br />
+                    <p>He realizado varios proyectos escolares y personales donde pongo en práctica desde el análisis
+                        como la viabilidad, uso de metodologías, planteamiento de requerimientos, mitigación de riesgos,
+                        entre otros, hasta la codificación del programa.</p>
+                    <br />
+                    <p>Me considero una persona <b>curiosa, analítica, organizada, responsable y muy trabajadora.</b>
+                    </p>
+                    <br />
+                    <p>Los puestos que me llaman mucho la atención en el campo laboral son <b>BackEnd Developer, Data
+                            Science y Data Engineer</b>.
+                    </p>
+                    <br />
+                </div>
+                <div class="sobre-mi-imagen">
+                    <img src="./img/gato.gif" alt="Gato utilizando una computadora">
+                </div>
+            </div>
         </section>
 
         <hr />
 
-        <section>
-            <h2>Habilidades</h2>
+        <section id="conocimientos" class="conocimientos">
+            <div class="tecnologias">
+                <h2>Tecnologías</h2>
+                <p>Algunas de las tecnologías con las que he trabajado son las siguientes:</p>
+                <ul class="lista-tecnologias">
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/java.png" alt="">
+                        <p>Java</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/spring.png" alt="">
+                        <p>Spring</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/python.png" alt="">
+                        <p>Python</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/flask.png" alt="">
+                        <p>Flask</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/numpy.png" alt="">
+                        <p>Numpy</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/mysql.png" alt="">
+                        <p>MySQL</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/sql-server.png" alt="">
+                        <p>SQL Server</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/html-5.png" alt="">
+                        <p>HTML5</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/css-3.png" alt="">
+                        <p>CSS</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/github.png" alt="">
+                        <p>GitHub</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/react.png" alt="">
+                        <p>React</p>
+                    </li>
+                    <li class="contenedor-tecnologia">
+                        <img class="img-tecnologia" src="./img/tecnologias/docker.png" alt="">
+                        <p>Docker</p>
+                    </li>
+                </ul>
+            </div>
 
-            <h3>Habilidades blandas</h3>
-            <ul>
-                <li>Trabajo en equipo</li>
-                <li>Responsable</li>
-                <li>Curioso</li>
-                <li>Analítico</li>
-                <li>Ordenado</li>
-                <li>Trabajador</li>
-            </ul>
+            <div class="cursos">
+                <h2>Cursos y certificaciones</h2>
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p></p>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
 
-            <h3>Conocimientos técnicos</h3>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>MySQL</li>
-                <li>Flask</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
         </section>
 
         <hr />
 
         <section>
             <h2>Mis proyectos</h2>
-            
+
             <ul>
                 <li>API de recomendaciones</li>
                 <li>API REST de tienda comercial</li>
@@ -95,19 +176,32 @@
         <hr />
 
         <section>
-            <h2>Contacto</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/israeljv" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/IsraelJv" target="_blank">GitHub</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+            <h2>Contáctame</h2>
+            <form action="">
+                <label for="nombre-usuario">Nombre: </label>
+                <input type="text" id:"nombre-usuario" placeholder="e.j. IsraelJv">
+                <br>
+                <label for="correo-usuario">Correo: </label>
+                <input type="text" id="correo-usuario" placeholder="e.j. correo@gmail.com">
+                <br>
+                <label for="">Comentario</label>
+                <input type="radio" name="seleccion" id="">
+                <label for="">Trabajo/proyecto</label>
+                <input type="radio" name="seleccion" id="">
+                <br>
+                <label for="">Mensaje: </label>
+                <input type="text" name="" id="">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
         <hr />
 
         <footer>
-
+            Copyright&copy; 2023 - Página creada por IsraelJv - Todos los derechos reservados
         </footer>
     </main>
 </body>
+
 </html>
