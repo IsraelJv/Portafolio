@@ -124,22 +124,30 @@ main {
 }
 
 .contenedor-iconos {
-    margin-top: 2rem;
+    margin: 10px;
+    height: 100px;
 }
 
 .lista-iconos {
     align-items: center;
     display: flex;
-    justify-content: center;
+    height: 100%;
+    justify-content:space-evenly;
     list-style-type: none;
+    width: 100%;
 }
 
 .lista-iconos li {
-    margin-left: 1.5rem;
+    width: 50px;
 }
 
 .lista-iconos li a img {
+    transition: width 0.3s ease;
     width: 2rem;
+}
+
+.lista-iconos li a img:hover {
+    width: 2.5rem;
 }
 
 .contenedor-imagen-perfil {
@@ -173,6 +181,7 @@ main {
     padding: 2rem 0;
 }
 
+
 .contenedor-sobre-mi {
     display: flex;
     flex-wrap: wrap;
@@ -198,7 +207,7 @@ main {
 .conocimientos {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
 
 .tecnologias {
