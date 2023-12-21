@@ -9,29 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="./img/logo.jpg" alt="Logotipo" srcset="">
-            <a href="#">
-                <h1>IsraelJv</h1>
-            </a>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-style">
+        <div class="container-fluid nav-style-container">
+            <div class="nav-container-img">
+                <img src="./img/logo.jpg" alt="Logotipo">
+                <a href="#presentacion">
+                    <h1>IsraelJv</h1>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-options">
+                    <a class="nav-link" aria-current="page" href="#presentacion">Inicio</a>
+                    <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+                    <a class="nav-link" href="#conocimientos">Tecnologías</a>
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
         </div>
-        <nav class="header-navegacion">
-            <ul class="nav-lista">
-                <li><a href="#presentacion">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#conocimientos">Tecnologías</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
     <main>
+        <hr />
+
         <section id="presentacion" class="presentacion">
             <div class="contenedor-presentacion">
                 <p id="saludo">¡Hola a todos!</p>
@@ -40,9 +51,12 @@
                     a tus páginas favoritas.</p>
                 <div class="contenedor-iconos">
                     <ul class="lista-iconos">
-                        <li><a href="https://www.linkedin.com/in/israeljv" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a></li>
-                        <li><a href="https://github.com/IsraelJv" target="_blank"><img src="./img/logotipo-de-github.png" alt="GitHub"></a></li>
-                        <li><a href="https://www.instagram.com/hect.isr?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><img src="./img/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/israeljv" target="_blank"><img src="./img/linkedin.png"
+                                    alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/IsraelJv" target="_blank"><img
+                                    src="./img/logotipo-de-github.png" alt="GitHub"></a></li>
+                        <li><a href="https://www.instagram.com/hect.isr?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><img
+                                    src="./img/instagram.png" alt="Instagram"></a></li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +73,8 @@
             <div class="contenedor-sobre-mi">
                 <div class="estudios">
                     <p>Actualmente, estoy en busca de tema para mi trabajo de titulación para graduarme como
-                        <b>Ingeniero en Sistemas Computacionales</b>.</p>
+                        <b>Ingeniero en Sistemas Computacionales</b>.
+                    </p>
                     <br />
                     <p>He realizado varios proyectos escolares y personales donde pongo en práctica desde el análisis
                         como la viabilidad, uso de metodologías, planteamiento de requerimientos, mitigación de riesgos,
@@ -202,6 +217,10 @@
             Copyright&copy; 2023 - Página creada por IsraelJv - Todos los derechos reservados
         </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

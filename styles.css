@@ -21,70 +21,63 @@ html {
     font-size: 20px;
 }
 
-/*****************************************/
-/*                  HEADER               */
-/*****************************************/
-
-header {
-    align-items: center;
-    background-color: var(--color-navbar);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    position:fixed;
-    width: 100%;
-}
-
-.header-logo {
-    align-items: center;
-    display: flex;
-    flex: 1;
-}
-
-.header-logo img {
-    margin-right: 10px;
-    width: 60px;
-}
-
-.header-logo h1 {
-    color: var(--color-text-light);
-    font-size: 1.5em;
-    transition: color 1s ease;
-}
-
-.header-logo h1:hover {
-    color: var(--color-text-hover);
-}
-
-
-.header-navegacion {
-    flex: 1;
-}
-
-.nav-lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-.nav-lista li {
-    margin-left: 20px;
-}
-
-.nav-lista li a {
-    color: var(--color-text-light);
-    transition: color 0.3s ease, font-size 0.3s ease;
-}
-
-.nav-lista li a:hover {
-    color: var(--color-text-hover);
-}
-
-
-
 main {
     background: linear-gradient(90deg, rgba(4,13,18,1) 0%, rgba(24,61,61,1) 35%, rgba(92,131,116,1) 100%);
 }
+
+/*********************************************/
+/*                  NAVEGACION               */
+/*********************************************/
+
+.nav-style {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-style-container {
+    align-items: center;
+    background-color: var(--color-section1);
+    display: flex;
+    align-content: space-between;
+}
+
+.nav-container-img {
+    align-items: center;
+    align-content:space-around;
+    display: flex;
+    width: 18rem;
+}
+
+.nav-container-img img{
+    width: 5rem;
+}
+
+.nav-container-img a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.nav-container-img a h1 {
+    font-size: 1.5rem;
+}
+
+.nav-options{
+    text-align: center;
+    width: 100%;
+}
+
+.nav-options a {
+    color: var(--color-text-light);
+}
+
+.nav-options a:hover {
+    color: var(--color-text-hover);
+}
+
+
+
 
 
 /*********************************************/
@@ -92,9 +85,11 @@ main {
 /*********************************************/
 
 .presentacion {
-    display: flex;
-    height: 100vh; /*Alto completo de la pantalla*/
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; /*Alto completo de la pantalla*/
+    width: 100%;
 }
 
 .contenedor-presentacion{
@@ -102,9 +97,11 @@ main {
     border: 10px solid black;
     color: var(--color-text-light);
     flex: 1;
-    margin: 1rem;
+    margin: 1.5rem;
+    min-width: 350px;
     padding: 1.5rem;
     text-align: center;
+    width: 50vw;
 }
 
 #saludo {
